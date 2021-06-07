@@ -1,0 +1,431 @@
+// DESKTOP VIEW
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+// style scss
+$fontRoboto: "Roboto", sans-serif;
+$fontKanit: "Kanit", sans-serif;
+
+@mixin textJudul($color) {
+  font-size: 32px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: $color;
+}
+
+@mixin gradient {
+  background: rgb(7, 15, 133);
+  background: linear-gradient(
+    0deg,
+    rgba(7, 15, 133, 1) 0%,
+    rgba(3, 9, 88, 1) 52%,
+    rgba(1, 5, 66, 1) 100%
+  );
+}
+// akhir style scss
+body {
+  font-family: $fontRoboto;
+}
+.navbar {
+  font-family: $fontKanit;
+  position: fixed;
+  display: flex;
+  background: transparent;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+}
+.navbar.active {
+  @include gradient;
+  z-index: 10;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: 03062e;
+  margin-right: 40rem;
+  text-transform: capitalize;
+  width: 45px;
+  h2,
+  a {
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+.nav-options {
+  display: flex;
+  list-style-type: none;
+  color: #2b9cff;
+  text-transform: uppercase;
+  font-weight: bold;
+  a {
+    font-weight: 100;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.mobile-option {
+  display: none;
+}
+
+.option {
+  margin: 0 20px;
+  &:hover {
+    content: "";
+    display: block;
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+    border-radius: 1.2px;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+// start jumbotron
+.jumbotron {
+  background-image: url("../assets/bg-front.jpg");
+  background-size: cover;
+  width: 100%;
+  background-position-y: -30px;
+  height: 540px;
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0)
+    );
+  }
+}
+.content {
+  font-family: $fontRoboto;
+  font-weight: 200;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 160px;
+  font-size: 42px;
+  color: #fff;
+  z-index: 1;
+  line-height: 50px;
+  span {
+    font-weight: bold;
+    color: #dddd30;
+  }
+}
+// finish jumborton
+
+// info panel
+.info-panel {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: -100px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  .info-card {
+    display: flex;
+    margin: 40px 20px;
+  }
+  .info-name {
+    display: flex;
+    flex-direction: column;
+  }
+  h4 {
+    color: #040a30;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  p {
+    font-size: 16px;
+    color: #888888;
+    margin-top: -5px;
+    font-weight: 200;
+  }
+  img {
+    float: left;
+    width: 110px;
+    height: 110px;
+    margin-right: 10px;
+    scroll-margin-bottom: 20px;
+  }
+}
+// akhir infoPanel
+
+// awal about
+.about {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  .container {
+    display: flex;
+    padding: 0 100px;
+  }
+  img {
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+  }
+  .about-text {
+    margin-top: 20px;
+    margin-left: 40px;
+    h2 {
+      @include textJudul(#001b31);
+    }
+    h4 {
+      line-height: 25px;
+      color: #3a3a3a;
+    }
+  }
+}
+// akhir about
+
+// awal team
+.support {
+  .container {
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
+.team-sup {
+  margin-top: 100px;
+  .container {
+    text-align: center;
+    h2 {
+      @include textJudul(#001b31);
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .card {
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 40px 20px 0 20px;
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card-text {
+      padding: 10px 0;
+      color: #03062e;
+    }
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+  }
+  ul {
+    font-size: 12px;
+    width: 200px;
+    list-style: none;
+    .name {
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+// akhir team
+
+// footer
+footer {
+  @include gradient();
+  width: 100%;
+  height: 300px;
+  color: #fff;
+  margin-top: 200px;
+  .foo-style {
+    text-align: center;
+    padding: 80px;
+    h2 {
+      @include textJudul(#ffffff);
+    }
+  }
+  p {
+    margin-top: 10px;
+  }
+  img {
+    width: 24px;
+    color: #fff;
+  }
+}
+// akhir footer
+@media screen and (max-width: 768px) {
+  width: 40%;
+}
+
+@media screen and( max-width: 576px) {
+  .navbar {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(7, 59, 186, 1) 100%
+    );
+  }
+  .logo {
+    margin-right: 10px;
+    width: 300px;
+    h2,
+    a {
+      color: #fff;
+    }
+  }
+  .nav-options {
+    display: flex;
+    width: 350px;
+    height: 320px;
+    position: absolute;
+    top: 48px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+    z-index: 10;
+  }
+  ul {
+    li.option a {
+      color: #ffffff;
+    }
+  }
+  .nav-options.active {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    align-content: center;
+    padding-left: 0px;
+    background: rgb(52, 230, 232);
+    background: linear-gradient(
+      0deg,
+      rgba(52, 230, 232, 1) 0%,
+      rgba(34, 193, 195, 1) 100%
+    );
+  }
+
+  .menu-icon {
+    margin-top: 5px;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    padding: 30px 0px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .jumbotron {
+    position: relative;
+    height: 300px;
+    z-index: -1;
+    .content {
+      font-size: 32px;
+      margin-top: 70px;
+    }
+  }
+
+  .info-panel {
+    width: 500px;
+    margin-top: -80px;
+    height: 200px;
+    .info-card {
+      margin-top: 10px;
+      flex-direction: column;
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      margin-right: 25px;
+    }
+  }
+
+  .about {
+    .container {
+      flex-direction: column;
+      padding: unset;
+    }
+    .image {
+      margin: 0 auto;
+    }
+    .about-text {
+      padding-top: 20px;
+      margin-left: unset;
+      h2 {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      h4 {
+        width: 85%;
+        margin: 0 auto;
+      }
+    }
+    img {
+      width: 500px;
+      padding-right: unset;
+    }
+  }
+
+  .warp {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    .card {
+      width: 200px;
+      margin: 20px 1px;
+    }
+    img {
+      width: 200px;
+    }
+  }
+
+  footer {
+    .warp {
+      margin: 0px auto;
+    }
+    img.icon {
+      width: 24px;
+    }
+  }
+}
