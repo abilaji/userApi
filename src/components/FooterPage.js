@@ -4,7 +4,7 @@ import Images from '../assets/imgs'
 function Footer() {
   return (
     <>
-      <footer>
+      <footer id="contact">
         <div className="warp">
           <div className="foo-style">
           <h2>get in touch</h2>

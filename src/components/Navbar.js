@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
-import {ReactComponent as CloseMenu} from '../assets/close.svg';
-import {ReactComponent as MenuIcon} from '../assets/menu.svg';
-function Header(){
+import React, {useState} from 'react'
+import {ReactComponent as CloseMenu} from '../assets/close.svg'
+import {ReactComponent as MenuIcon} from '../assets/menu.svg'
+import {HashLink as Link} from 'react-router-hash-link'
+
+function Navbar(){
   const [click, setClick] = useState(false);
   const handleClick  = () => setClick(!click);
   const closeMobileMenu  = () => setClick(false);
   const [navbar,setNavber] = useState(false);
-
-
   const changeNavbar = () => {
     if(window.scrollY >= 80 ){
       setNavber(true);
@@ -23,7 +23,7 @@ function Header(){
     <div className={navbar ? 'navbar active' : 'navbar'}>
       <div className="logo-nav">
         <div className="logo">
-          <a href="!#">
+          <a href="#home">
             <h2 >digiyouth</h2>
           </a>
         </div>
@@ -31,19 +31,19 @@ function Header(){
         <ul className={click ? "nav-options active" : "nav-options"}>
           
           <li className="option" onClick={closeMobileMenu}>
-            <a href="!#">home</a>
+            <Link smooth to="#home">Home </Link>
           </li>
 
           <li className="option" onClick={closeMobileMenu}>
-            <a href="!#">about</a>
+            <Link smooth to="#about">About </Link>
           </li>
           
           <li className="option" onClick={closeMobileMenu}>
-            <a href="!#">team</a>
+            <Link smooth to="#team">Team </Link>
           </li>
 
           <li className="option jsOne" onClick={closeMobileMenu}>
-            <a className="jsTwo" href="!#">contact</a>
+            <Link smooth to="#contact">contact</Link>
           </li>
         </ul>
       </div>
@@ -60,4 +60,4 @@ function Header(){
     )
   }
 
-  export default Header;
+  export default Navbar;

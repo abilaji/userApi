@@ -1,14 +1,26 @@
-import Header from './components/Header'
-import Body from './components/Body'
+import React, {Component} from 'react'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
+import HomePage from './components/HomePage'
+import AboutPage from './components/AboutPage'
+import TeamPage from './components/TeamPage'
+import FooterPage from './components/FooterPage'
+import InfoPanel from './components/InfoPanel'
 import '../src/style/app.scss'
 
-function App() {
-  return (
-    <> 
-      <Header />
-      <Body />
-    </>
-  );
+class App extends Component {
+  render(){
+    return (
+      <>
+        <Router>
+          <Route exact path="/" component={HomePage} />
+          <Route path="#home" component={InfoPanel} />
+          <Route path="#about" component={AboutPage} />
+          <Route path="#team" component={TeamPage} />
+          <Route path="#contact" component={FooterPage} />
+        </Router>
+      </>
+    );
+  }
 }
 
 export default App;

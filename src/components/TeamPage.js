@@ -34,7 +34,7 @@ class Team extends Component {
   render() {
     const { items } = this.state;
     return (
-      <div className="team-sup">
+      <div className="team-sup" id="team">
         <div className="container">
           <h2>member team</h2>
            <div className="row">
