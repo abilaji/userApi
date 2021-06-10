@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
+// import {HashLink as Link} from 'react-router-hash-link'
 import HomePage from './components/HomePage'
 import AboutPage from './components/AboutPage'
 import TeamPage from './components/TeamPage'
@@ -12,7 +13,7 @@ class App extends Component {
     return (
       <>
         <Router>
-          <Route exact path="/" component={HomePage} />
+          <Route exact path="/userApi" component={HomePage} />
           <Route path="#home" component={InfoPanel} />
           <Route path="#about" component={AboutPage} />
           <Route path="#team" component={TeamPage} />
