@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <>
         <Router>
-          <Route exact path="/userApi.github.io" component={HomePage} />
+          <Route exact path="/userApi" component={HomePage} />
           <Route path="#home" component={InfoPanel} />
           <Route path="#about" component={AboutPage} />
           <Route path="#team" component={TeamPage} />
