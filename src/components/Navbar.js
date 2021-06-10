@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {ReactComponent as CloseMenu} from '../assets/close.svg'
 import {ReactComponent as MenuIcon} from '../assets/menu.svg'
 import {HashLink as Link} from 'react-router-hash-link'
+// import {Link} from 'react-router-dom'
 
 function Navbar(){
   const [click, setClick] = useState(false);
