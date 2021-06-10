@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/userApi/static/css/main.3ea11c81.chunk.css",
-    "main.js": "/userApi/static/js/main.2452237c.chunk.js",
-    "main.js.map": "/userApi/static/js/main.2452237c.chunk.js.map",
-    "runtime-main.js": "/userApi/static/js/runtime-main.05ce9ec2.js",
-    "runtime-main.js.map": "/userApi/static/js/runtime-main.05ce9ec2.js.map",
-    "static/js/2.22699b72.chunk.js": "/userApi/static/js/2.22699b72.chunk.js",
-    "static/js/2.22699b72.chunk.js.map": "/userApi/static/js/2.22699b72.chunk.js.map",
-    "static/js/3.ac14752f.chunk.js": "/userApi/static/js/3.ac14752f.chunk.js",
-    "static/js/3.ac14752f.chunk.js.map": "/userApi/static/js/3.ac14752f.chunk.js.map",
-    "index.html": "/userApi/index.html",
-    "static/css/main.3ea11c81.chunk.css.map": "/userApi/static/css/main.3ea11c81.chunk.css.map",
-    "static/js/2.22699b72.chunk.js.LICENSE.txt": "/userApi/static/js/2.22699b72.chunk.js.LICENSE.txt",
-    "static/media/BE.jpg": "/userApi/static/media/BE.8dd21404.jpg",
-    "static/media/FE.jpg": "/userApi/static/media/FE.45f96f50.jpg",
-    "static/media/app.scss": "/userApi/static/media/bg-front.0690cc1b.jpg",
-    "static/media/close.84134bfa.svg": "/userApi/static/media/close.84134bfa.svg",
-    "static/media/menu.8675bc17.svg": "/userApi/static/media/menu.8675bc17.svg",
-    "static/media/pesan.svg": "/userApi/static/media/pesan.dfd7eec5.svg",
-    "static/media/webDesain.jpg": "/userApi/static/media/webDesain.f2bd1605.jpg",
-    "static/media/workingspace.png": "/userApi/static/media/workingspace.39495924.png"
+    "main.css": "/userApi.github.io/static/css/main.257bc68f.chunk.css",
+    "main.js": "/userApi.github.io/static/js/main.c1c8185d.chunk.js",
+    "main.js.map": "/userApi.github.io/static/js/main.c1c8185d.chunk.js.map",
+    "runtime-main.js": "/userApi.github.io/static/js/runtime-main.7bf7c15b.js",
+    "runtime-main.js.map": "/userApi.github.io/static/js/runtime-main.7bf7c15b.js.map",
+    "static/js/2.22699b72.chunk.js": "/userApi.github.io/static/js/2.22699b72.chunk.js",
+    "static/js/2.22699b72.chunk.js.map": "/userApi.github.io/static/js/2.22699b72.chunk.js.map",
+    "static/js/3.ac14752f.chunk.js": "/userApi.github.io/static/js/3.ac14752f.chunk.js",
+    "static/js/3.ac14752f.chunk.js.map": "/userApi.github.io/static/js/3.ac14752f.chunk.js.map",
+    "index.html": "/userApi.github.io/index.html",
+    "static/css/main.257bc68f.chunk.css.map": "/userApi.github.io/static/css/main.257bc68f.chunk.css.map",
+    "static/js/2.22699b72.chunk.js.LICENSE.txt": "/userApi.github.io/static/js/2.22699b72.chunk.js.LICENSE.txt",
+    "static/media/BE.jpg": "/userApi.github.io/static/media/BE.8dd21404.jpg",
+    "static/media/FE.jpg": "/userApi.github.io/static/media/FE.45f96f50.jpg",
+    "static/media/app.scss": "/userApi.github.io/static/media/bg-front.0690cc1b.jpg",
+    "static/media/close.84134bfa.svg": "/userApi.github.io/static/media/close.84134bfa.svg",
+    "static/media/menu.8675bc17.svg": "/userApi.github.io/static/media/menu.8675bc17.svg",
+    "static/media/pesan.svg": "/userApi.github.io/static/media/pesan.dfd7eec5.svg",
+    "static/media/webDesain.jpg": "/userApi.github.io/static/media/webDesain.f2bd1605.jpg",
+    "static/media/workingspace.png": "/userApi.github.io/static/media/workingspace.39495924.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.05ce9ec2.js",
+    "static/js/runtime-main.7bf7c15b.js",
     "static/js/2.22699b72.chunk.js",
-    "static/css/main.3ea11c81.chunk.css",
-    "static/js/main.2452237c.chunk.js"
+    "static/css/main.257bc68f.chunk.css",
+    "static/js/main.c1c8185d.chunk.js"
   ]
 }
